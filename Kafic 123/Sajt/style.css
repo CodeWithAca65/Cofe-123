@@ -1,0 +1,184 @@
+* {
+    font-family: cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /*CSS box-sizing својство нам омогућава да укључимо паддинг и ивицу у укупну ширину и висину елемента.*/
+}
+
+body {
+    background-image: url('Slike/kafa.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.row {
+    overflow: hidden;
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+}
+
+.divsve {
+    position: relative;
+}
+
+.levi {
+    padding: 2px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 2px solid black;
+    border-radius: 25px;
+    text-align: center;
+}
+
+img {
+    margin-top: 15px;
+}
+
+#kafa2 {
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
+}
+
+#gornji {
+    opacity: 0.8;
+    position: relative;
+    width: 100%;
+}
+
+#gornji ul {
+    overflow: hidden;
+    list-style-type: none;
+    padding: 0;
+    background-image: linear-gradient(to bottom right, #EEC05D, #F9E3AF);
+}
+
+#gornji ul li {
+    float: left;
+    width: 25% !important;
+    text-align: center;
+}
+
+#gornji ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 14px;
+    display: block;
+}
+
+#gornji ul li a:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+button {
+    height: 40px;
+    width: 222px;
+    font-weight: bolder;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+}
+
+#kontakt_link {
+    color: black;
+}
+
+#kontakt_link:link {
+    text-decoration: none;
+}
+
+#kontakt_link:visited {
+    text-decoration: none;
+}
+
+#kontakt_link:hover {
+    text-decoration: none;
+}
+
+#kontakt_link:active {
+    text-decoration: none;
+}
+
+.dno {
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #EEC05D, #F9E3AF);
+    display: table;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    color: black;
+    opacity: 0.7;
+}
+
+/*** RESPONSIVE ***/
+[class*="col-"] {
+    float: left;
+}
+
+/* MOBILNI UREĐAJI - responsive */
+@media only screen and (max-width: 1000px) {
+    #gornji ul li {
+        float: left;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    #kafa2 {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.64%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}

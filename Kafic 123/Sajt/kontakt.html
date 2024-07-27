@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Slike/kafa2.jpg" type="image/x-icon">
+    <title>~ Rezervacija ~</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: cursive;
+        }
+
+        body {
+            background-color: rgb(31, 31, 31);
+        }
+
+        h1 {
+            text-align: center;
+            width: 100%;
+            color: #EEC05D;
+        }
+
+        #kontakt-forma {
+            width: 100%;
+            padding: 0;
+            color: black;
+            background-color: #EEC05D;
+            border: solid #404040 1px;
+            outline: solid #101010 1px;
+        }
+
+        .form-group label {
+            color: black;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        #naslov {
+            width: 100%;
+            color: black;
+            background-color: #F9E3AF;
+        }
+
+        #naslov:focus {
+            box-shadow: none;
+            border: 1px solid #505050;
+        }
+
+        #email {
+            width: 100%;
+            color: black;
+            background-color: #F9E3AF;
+            border: 1px solid #404040;
+        }
+
+        #email:focus {
+            box-shadow: none;
+            border: 1px solid #505050;
+        }
+
+        #poruka {
+            width: 100%;
+            color: black;
+            background-color: #F9E3AF;
+            border: 1px solid #404040;
+        }
+
+        #poruka:focus {
+            box-shadow: none;
+            border: 1px solid #505050;
+        }
+
+        button.btn-link {
+            font-weight: bolder;
+            width: 100%;
+            color: black;
+            background-color: #F9E3AF;
+            box-shadow: 0 0 1px 1px #F9F8D4;
+            border: 1px solid #555;
+            text-decoration: none;
+            display: block;
+        }
+
+        button.btn-link:hover {
+            color: #101010;
+            background-color: #F9E3AF;
+            border: 1px solid #585858;
+            box-shadow: 0 0 1px 1px #F9F8D4;
+            cursor: pointer;
+        }
+
+        button.btn-link:focus {
+            box-shadow: none;
+        }
+
+        .button_nazad {
+            font-weight: bolder;
+            width: 100%;
+            background-color: #F9E3AF;
+        }
+
+        a {
+            color: black;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        a:active {
+            text-decoration: none;
+        }
+
+        p {
+            background-color: #EEC05D;
+            color: #141414;
+            font-weight: bolder;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>~ KONTAKTIRAJTE NAS I PRIREDITE SEBI NEZABORAVNO VEČE ~</h1>
+    <form action="mailto:vasa_e-adresa@gmail.com" method="post" enctype="text/plain" id="kontakt-forma">
+        <div class="form-group">
+            <label>Naslov:</label>
+            <input type="text" id="naslov" class="form-control" name="naslov" placeholder="Naslov" value="" required>
+        </div>
+        <div class="form-group">
+            <label>E-mail:</label>
+            <input type="email" id="email" class="form-control" name="email" placeholder="Vaš E-mail" value="" required>
+        </div>
+        <div class="form-group">
+            <label>Unesite datum za koji želite da rezervišete sto:</label>
+            <input type="date" id="email" class="form-control" name="datum" value="" required>
+        </div>
+        <div class="form-group">
+            <label>Unesite vreme za koji želite da rezervišete sto:</label>
+            <input type="time" id="email" class="form-control" name="vreme" value="" required>
+        </div>
+        <div class="form-group">
+            <label>Opis proslave:</label>
+            <textarea id="poruka" class="form-control" name="opis" placeholder="Napišite nešto više o proslavi..."
+                rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-link">Potvrdi rezervaciju</button>
+        <br>
+        <button class="button_nazad"><a href="index.html">Povratak na početnu stranu</a></button>
+    </form>
+    <br>
+    <p>* Molimo Vas da prilikom rezervacije unesete detaljan opis proslave kako bi proslava bila što bolje
+        organizovana. *</p>
+
+    <p>* Molimo Vas da nam naznačite u opisu proslave za koliko osoba želite da zakažete rezervaciju. *</p>
+
+    <p>* Takođe, ukoliko ste zakazali rezervaciju, pa odustali, molimo Vas da nas obavestite minimum jedan dan pre
+        održavanja proslave. *
+    </p>
+
+    <p>* Rezervaciju takođe možete obaviti i u našem kafiću. *</p>
+
+    <p>* Rezervaciju takođe možete obaviti i putem telefona na broj 061 11 11 11. *</p>
+
+    <p>* Rezervaciju takođe možete obaviti i putem telefona na broj 018 222 222. *</p>
+
+    <p>* Rezervaciju takođe možete obaviti i putem email adrese kafic123@gmail.com. *</p>
+    <br>
+</body>
+
+</html>
